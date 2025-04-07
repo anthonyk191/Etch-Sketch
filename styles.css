@@ -1,0 +1,6 @@
+.art_box_boundaries{
+    display: flex;
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+}
