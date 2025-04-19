@@ -13,8 +13,8 @@ function createContainer() {
     columnContainer.style.display = 'flex';
     columnContainer.style.flexDirection = "column";
     columnContainer.style.backgroundColor = 'white';
-    // columnContainer.style.margin = '10px';
     columnContainer.style.flexGrow = 1;
+    columnContainer.style.alignContent = 'center';
 
     return(columnContainer)
 }
@@ -23,11 +23,13 @@ function createBox() {
     const box = document.createElement("div")
     box.style.display = 'flex';
     box.style.backgroundColor = 'black';
-    box.style.margin = '5px';
+    // box.style.margin = '3px'; //Disable not necessary 
     box.style.flexGrow = 1;
+    box.style.backgroundColor = randomColor()
     
-    return(box)
+    return(box);
 }
+
 //fitting boxes into containers based on number
 function fitBoxes(container, quantity){
     for (let i = 0; i < quantity; i++){
@@ -43,8 +45,14 @@ function generateFilledContainer(quantity){
 }
 
 
-//Ignore function for now
+//Master Function for generating all boxes on the drawing grid
 function boxUpdate(masterContainer, input){
+    
+    //Limits how many drawing spaces can be made to avoid user overloading program
+    if (input > 100) {
+        input = 100;
+    }
+    
     if (masterContainer) {
         for (let i = 0; i < input; i++){
             masterContainer.appendChild(generateFilledContainer(input))
@@ -56,6 +64,16 @@ function boxUpdate(masterContainer, input){
 }
 
 let art_box_boundary = document.querySelector(".art_box_boundaries")
-boxUpdate(art_box_boundary, 2)
 
-//Next time improve the margins of the boxes to make them all uniform
+//Generate random color function
+function randomColor(){
+    let letters = '0123456789ABCDEF'
+    let color = '#'
+    
+    for (let i=0; i<6; i++){
+        color += letters[Math.floor(Math.random()*16)]
+    }
+    return(color)
+}
+
+boxUpdate(art_box_boundary, 30)
