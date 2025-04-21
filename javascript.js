@@ -6,6 +6,7 @@ function createContainer() {
     columnContainer.style.backgroundColor = 'gray';
     columnContainer.style.flexGrow = 1;
     columnContainer.style.alignContent = 'center';
+    columnContainer.style.userSelect = 'none'; //This was the key to all my problems
     return(columnContainer)
 }
 //Generated boxes for the containers
@@ -61,7 +62,6 @@ function fillMasterContainer(masterContainer, input){
     }
 }
 
-let art_box_boundary = document.querySelector(".art_box_boundaries")
 
 //Generate random color function
 function randomColor(){
@@ -75,6 +75,7 @@ function randomColor(){
     return(color)
 }
 
+let art_box_boundary = document.querySelector(".art_box_boundaries")
 fillMasterContainer(art_box_boundary, 4)
 
 //-----------------------------------------------------------------------
@@ -91,5 +92,8 @@ let isMouseDown = false;
 //     console.log("mouse up")
 // })
 
-document.body.onmousedown = () => (isMouseDown = true)
-document.body.onmouseup = () => (isMouseDown = false)
+art_box_boundary.onmousedown = () => (isMouseDown = true)
+art_box_boundary.onmouseup = () => (isMouseDown = false)
+
+
+//Future plans consider using document.createDocumentFragment() for optimzation

@@ -9,8 +9,9 @@
 .bodyLayer{
     display: flex;
     flex-direction: row;
-    height: fit-content;
-    width: fit-content;
+    width: 750px;
+    align-items: center;
+    justify-content: center;
 }
 /* Body Sub Layer 1 */
 .hotbarContainerManager{
@@ -38,11 +39,17 @@
     width: 50px;
     height: 50px;
     background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .rainbowContainer{
     width: 50px;
     height: 50px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Body Sub Layer 2 */
 .hotbarContainerSub2{
@@ -60,19 +67,24 @@
     width: 50px;
     height: 50px;
     background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .clearEverythingContainer{
     width: 50px;
     height: 50px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Body Sub Layer 3 */
 .hotbarContainerSub3{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     flex-grow: 1;
+    justify-content: center;
     align-items: center;
     background-color: yellow;
     padding: 5px;
