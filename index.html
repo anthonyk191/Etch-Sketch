@@ -7,30 +7,35 @@
         <script defer src="javascript.js"></script>
     </head>
     <body>
-        <div class="headerLayer"></div>
-        <div class="bodyLayer">
-            <div class="hotbarContainerManager">
-                <div class="hotbarContainerSub1">
-                    <div class="blackColorContainer">
-                        <button>Convert to Black</button>
+        <div class="HeaderLayer"></div>
+        <div class="BodyLayer">
+            <div class="HotbarContainerManager">
+                <div class="HotbarContainerSub1">
+                    <div class="BlackColorContainer">
+                        <button class="Btn" id = "BlackBtn">Convert to Black</button>
                     </div>
-                    <div class="rainbowContainer">
-                        <button>Convert to Rainbow</button>
-                    </div>
-                </div>
-                <div class="hotbarContainerSub2">
-                    <div class="eraserContainer">
-                        <button>Eraser</button>
-                    </div>
-                    <div class="clearEverythingContainer">
-                        <button>Clear All</button>
+                    <div class="RainbowContainer">
+                        <button class="Btn" id = "RainbowBtn">Convert to Rainbow</button>
                     </div>
                 </div>
-                <div class="hotbarContainerSub3">
-                    <div class="sliderContainer"></div>
+                <div class="HotbarContainerSub2">
+                    <div class="EraserContainer">
+                        <button class="Btn" id = "WhiteBtn">Eraser</button>
+                    </div>
+                    <div class="ClearEverythingContainer">
+                        <button class="Btn" id = "ClearEverythingBtn">Clear All</button>
+                    </div>
+                </div>
+                <div class="HotbarContainerSub3">
+                    <div class="SliderContainer">
+                        <div>
+                            <!-- <input type="range" min="1" max="100" value = "50" class="slider" id="myRange"> -->
+                            <input type="range" min="1" max="100" value = "50" class="Slider">  <!--type="range" specifies that it is a slider-->
+                        </div>
+                    </div>
                 </div>
             </div>            
-            <div class="art_box_boundaries"></div>
+            <div class="ArtBoxBoundaries"></div>
         </div>
 
     </body>

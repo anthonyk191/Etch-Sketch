@@ -1,12 +1,12 @@
 /* Master Layer */
 /* Header Layer */
-.headerLayer{
+.HeaderLayer{
     width: 750px;
     height: 150px;
     background-color: black;
 }
 /* Body Layer */
-.bodyLayer{
+.BodyLayer{
     display: flex;
     flex-direction: row;
     width: 750px;
@@ -14,7 +14,7 @@
     justify-content: center;
 }
 /* Body Sub Layer 1 */
-.hotbarContainerManager{
+.HotbarContainerManager{
     display: flex;
     flex-direction: column;
     background-color: aqua;
@@ -24,7 +24,7 @@
     width: 200px;
     padding: 5px;
 }
-.hotbarContainerSub1{
+.HotbarContainerSub1{
     display: flex;
     flex-direction: row;
     background-color: red;
@@ -35,7 +35,7 @@
     height: 150px;
     width: 200px;
 }
-.blackColorContainer{
+.BlackColorContainer{
     width: 50px;
     height: 50px;
     background-color: gray;
@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: center;
 }
-.rainbowContainer{
+.RainbowContainer{
     width: 50px;
     height: 50px;
     background-color: white;
@@ -52,7 +52,7 @@
     justify-content: center;
 }
 /* Body Sub Layer 2 */
-.hotbarContainerSub2{
+.HotbarContainerSub2{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,7 +63,7 @@
     height: 150px;
     width: 200px;
 }
-.eraserContainer{
+.EraserContainer{
     width: 50px;
     height: 50px;
     background-color: gray;
@@ -71,7 +71,7 @@
     align-items: center;
     justify-content: center;
 }
-.clearEverythingContainer{
+.ClearEverythingContainer{
     width: 50px;
     height: 50px;
     background-color: white;
@@ -80,7 +80,7 @@
     justify-content: center;
 }
 /* Body Sub Layer 3 */
-.hotbarContainerSub3{
+.HotbarContainerSub3{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -91,13 +91,13 @@
     height: 150px;
     width: 200px;
 }
-.sliderContainer{
+.SliderContainer{
     width: 200px;
     height: 50px;
     background-color: gray;
 }
 /* Body Layer 2 */
-.art_box_boundaries{
+.ArtBoxBoundaries{
     display: flex;
     background-color: gray;
     width: 500px;
