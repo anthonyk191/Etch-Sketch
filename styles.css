@@ -1,11 +1,30 @@
+:root {
+    --dark_periwinkle: #7a72ff;
+    --dark_2: #7e85ff;
+    --dark_3: #8497ff;
+    --dark_4: #93acff;
+    --periwinkle: #a9bcff;
+    --light_periwinkle: #b4caff;
+    --pastel_periwinkle: #c1d3ff;
+    --light_2: #c5dbff;
+    --light_3: #dbeaff;
+}
+
 /* Master Layer */
+.EntirePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pastel_periwinkle);
+}
 /* Header Layer */
 .HeaderLayer{
-    width: 750px;
+    width: 700px;
     height: 150px;
-    background-color: white;
-    border-style: solid;
-    border-width: 5px;
+    background-color: var(--dark_2);
+    /* border-style: solid; */
+    /* border-width: 5px; */
 }
 /* Body Layer */
 .BodyLayer{
@@ -24,9 +43,9 @@
     justify-content: space-around;
     height: 500px;
     width: 200px;
-    padding: 5px;
-    border-style: solid;
-    border-width: 5px;
+    /* padding: 5px; */
+    /* border-style: solid; */
+    /* border-width: 5px; */
 }
 .HotbarContainerSub1{
     display: flex;
@@ -35,9 +54,10 @@
     align-items: center;
     justify-content: space-around;
     flex-grow: 1;
-    padding: 5px;
+    /* padding: 5px; */
     height: 150px;
     width: 200px;
+    background-color: var(--dark_3);
 }
 .BlackColorContainer{
     /* width: 50px;
@@ -64,10 +84,10 @@
     align-items: center;
     justify-content: space-around;
     flex-grow: 1;
-    background-color: blue;
-    padding: 5px;
+    /* padding: 5px; */
     height: 150px;
     width: 200px;
+    background-color: var(--dark_2);
 }
 .EraserContainer{
     /* width: 50px;
@@ -96,14 +116,25 @@
     justify-content: center;
     align-items: center;
     background-color: green;
-    padding: 5px;
+    /* padding: 5px; */
     height: 150px;
     width: 200px;
+    background-color: var(--dark_3);
 }
 .SliderContainer{
     width: 200px;
     height: 50px;
-    background-color: gray;
+    background-color: var(--dark_4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_dimensions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Body Layer 2 */
 .ArtBoxBoundaries{
@@ -111,9 +142,9 @@
     background-color: white;
     width: 500px;
     height: 500px;
-    padding: 3px;
-    border-style: solid;
-    border-width: 5px;
+    /* padding: 3px; */
+    /* border-style: solid; */
+    /* border-width: 5px; */
 }
 
 

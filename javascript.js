@@ -35,9 +35,14 @@ art_box_boundary.onmouseup = () => (isMouseDown = false)
 
 //Updating the slider
 var slider = document.querySelector(".Slider");
+var slider_dimensions = document.querySelector(".slider_dimensions");
+slider_dimensions.textContent = "50x50"
 slider.addEventListener('change', () => {
     fillMasterContainer(art_box_boundary, slider.value)
+    text = slider.value.toString() + "x" + slider.value.toString();
+    slider_dimensions.textContent = text;
 })
+
 
 
 //ALL FUNCTIONS DOWN BELOW
